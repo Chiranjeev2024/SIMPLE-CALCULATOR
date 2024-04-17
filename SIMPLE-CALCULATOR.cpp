@@ -14,6 +14,52 @@ int main(){
     cout<<"\t\t. division(*)"<<endl;
     cout<<"\t\t. Modulus(%)"<<endl;
 
+    cout<<endl<<endl<<"Start Calculation--"<<endl;
+    
+    int num1;
+    cout<<"\tEnter your first number = ";
+    cin>>num1;
+
+    int num2;
+    cout<<"\tEnter your second number = ";
+    cin>>num2;
+
+    char operators;
+    cout<<"\tEnter your the operator = ";
+    cin>>operators;
+
+    switch (operators)
+    {
+    case '+':
+        cout<<"   ANS:-"<<endl;
+        cout<<"\t"<<num1<<" + "<< num2 <<" = "<<num1+num2<<endl;
+        break;
+
+    case '-':
+        cout<<"   ANS:-"<<endl;
+        cout<<"\t"<<num1<<" - "<< num2 <<" = "<<num1-num2<<endl;
+        break;
+
+    case '*':
+        cout<<"   ANS:-"<<endl;
+        cout<<"\t"<<num1<<" * "<< num2 <<" = "<<num1*num2<<endl;
+        break;
+
+    case '/':
+        cout<<"   ANS:-"<<endl;
+        cout<<"\t"<<num1<<" / "<< num2 <<" = "<<num1/num2<<endl;
+        break;
+
+    case '%':
+        cout<<"   ANS:-"<<endl;
+        cout<<"\t"<<num1<<" % "<< num2 <<" = "<<num1%num2<<endl;
+        break;
+    
+    default:
+        cout<<"Please enter the numbers or operator.."<<endl;
+        break;
+    }
+
 
     return 0;
 }
